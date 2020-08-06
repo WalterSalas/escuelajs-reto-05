@@ -18,7 +18,7 @@ const getData = (api) => {
                 .map((character) => {
                     return `
                         <article class="Card">
-                            <img src="${character.image}" />
+                            <img alt="Character Picture: ${character.name}" src="${character.image}" />
                             <h2>${character.name}<span>${character.species}</span></h2>
                         </article>`;
                 })
